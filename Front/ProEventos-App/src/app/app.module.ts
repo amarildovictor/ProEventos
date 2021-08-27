@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavComponent } from './nav/nav.component';
+import { NavComponent } from './shared/nav/nav.component';
 
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
@@ -22,6 +22,7 @@ import { PalestrantesComponent } from './components/palestrantes/palestrantes.co
 import { ContatosComponent } from './components/contatos/contatos.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { TituloComponent } from './shared/titulo/titulo.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     ContatosComponent,
     DashboardComponent,
     PerfilComponent,
+    TituloComponent,
     NavComponent,
     DateTimeFormatPipe
   ],
