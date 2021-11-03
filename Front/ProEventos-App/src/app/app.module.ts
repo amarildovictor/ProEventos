@@ -29,6 +29,12 @@ import { UserComponent } from './components/user/user.component';
 import { LoginComponent } from './components/user/login/login.component';
 import { RegistrationComponent } from './components/user/registration/registration.component';
 
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { defineLocale } from 'ngx-bootstrap/chronos';
+import { ptBrLocale } from 'ngx-bootstrap/locale';
+
+defineLocale('pt', ptBrLocale);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,6 +69,7 @@ import { RegistrationComponent } from './components/user/registration/registrati
       preventDuplicates: true,
       progressBar: true
     }),
+    BsDatepickerModule.forRoot(),
     NgxSpinnerModule
   ],
   providers: [EventoService],
